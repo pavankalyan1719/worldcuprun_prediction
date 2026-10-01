@@ -1,0 +1,26 @@
+{
+    "registry_status": "READY_FOR_DEPLOYMENT",
+    "model_lineage": {
+        "registered_name": "WorldCupRunPrediction",
+        "version": 1,
+        "current_stage": "Production",
+        "run_id": "b76f5195d0834957a4f4a0f056fb08f3",
+        "model_uri": "models:/WorldCupRunPrediction/1"
+    },
+    "performance_metrics": {
+        "MAE": 43.640257149723624,
+        "MSE": 3337.3160421773614,
+        "RMSE": 57.769507892809344,
+        "R2": 0.30943332774831533
+    },
+    "hyperparameters": {
+        "test_size": "0.2",
+        "random_state": "42",
+        "group_split": "Year + Match Number",
+        "models": "5",
+        "selected_model": "Extra Trees"
+    },
+    "preprocessing_dependency": "src/preprocess.py",
+    "dataset": "data/raw/world_cup_score.csv",
+    "processed_dataset": "data/processed/processed_data.csv"
+}
